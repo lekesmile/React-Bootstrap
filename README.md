@@ -1,7 +1,7 @@
-# This project is a react-bootstrap demo. 
-make use of this npm packages
-npm i react-bootstrap
-npm i react-router-dom
+# This project is a react-bootstrap demo. .<br />
+make use of this npm packages.<br />
+npm install react-bootstrap.<br />
+npm install react-router-dom.<br />
 
 ### `npm start`
 
