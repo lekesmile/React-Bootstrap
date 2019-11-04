@@ -3,7 +3,6 @@ import Table from 'react-bootstrap/Table'
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 
-
 const clientsFromDb = [
     { 'id': 1, 'firstname': 'Jussi', 'lastname': 'Mikkelson', 'osoite': 'Freemantie 10' },
     { 'id': 2, 'firstname': 'Matti', 'lastname': 'Halonen', 'osoite': 'Lontokatu 20' },
@@ -13,11 +12,9 @@ const clientsFromDb = [
 ]
 
 
-export default class clients extends Component {
 
-    editButtoon =(id)=>{
-        console.log(id);
-    }
+export default class edit extends Component {
+
 
     render() {
 
@@ -42,8 +39,8 @@ export default class clients extends Component {
                                     <td>{client.lastname}</td>
                                     <td>{client.osoite}</td>
                                     <td>
-                                        <Button onClick={() => this.editButtoon(client.id)} variant="outline-primary" size="sm" m={2}>edit</Button> {" "}
-                                        <Button variant="outline-danger" size="sm">delete</Button>
+                                        <Button onClick={() => this.editButtoon(client.id)} variant="outline-primary" size="sm" m={2}>Save</Button> {" "}
+
                                     </td>
                                 </tr>
                             ))}
